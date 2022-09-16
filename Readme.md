@@ -2,9 +2,17 @@
 
 
 - check is user a root user.
-- apt-get update
-- apt-get install maven
-- mvn test
-- mvn package
-- apt-get install tomcat9
-- cp -rvf target/hello-world-0.0.1-SNAPSHOT.war /var/lib/tomcat9/webapps/app.war
+## First install the maven in system. Run the below command:-
+
+    - apt-get update
+    - apt-get install maven
+    - mvn test
+    - mvn package
+    - mvn install
+    - apt-get install tomcat9
+    It can be access on  port 8080:
+
+## After this we need to insall tomcat9's admin webpage. So run the below coommnaf in it:
+
+        sudo apt insall tomcat9-admin
+
